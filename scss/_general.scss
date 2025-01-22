@@ -25,6 +25,15 @@ a{
 ul{
     list-style: none;
 }
+span{display: block;}
+
+
+button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
 
 .container{
     margin: 0 auto;
