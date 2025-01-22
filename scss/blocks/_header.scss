@@ -9,14 +9,19 @@
     }
 
     &__link {
-        color: #FFF;
+        color: #ffffffa8;
         font-family: "Prompt";
         font-size: 18px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
         text-transform: uppercase;
+
+        &:hover {
+            color: #fff;
+        }
     }
+
 
     &__title {
         color: #FFF;

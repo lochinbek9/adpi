@@ -1,0 +1,26 @@
+.news {
+
+    &__top{
+        max-width: 750px;
+    }
+
+    &__desc {
+        color: #225093;
+        font-family: "Prompt";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        color: #000;
+        font-family: "Prompt";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}

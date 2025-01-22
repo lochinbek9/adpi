@@ -1,0 +1,70 @@
+
+.about{
+    padding: 173px 0;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left{
+        max-width: 600px;
+    }
+
+    &__desc{
+        color: #1F4E92;
+        font-family: "Prompt";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__title{
+       
+        color: #000;
+        font-family: "Prompt";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__text{
+        max-width: 550px;
+        color: #000;
+        font-family: "Prompt";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__border{
+        top: 930px;
+        left: 63%;
+        position: absolute;
+        border-radius: 10px;
+        border: 4px solid #1F4E92;
+        width: 480px;
+        height: 512px;
+        flex-shrink: 0;
+        z-index: -100;
+    }
+}
+
+// ABOUT TABLET
+
+@media screen and (max-width: 1080px) {
+    .about__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__border{
+        display: none;
+    }
+}
