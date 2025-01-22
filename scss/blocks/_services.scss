@@ -1,0 +1,123 @@
+.services{
+    background: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../../img/header-bg.png);
+    padding-top: 50px;
+    padding-bottom: 103px;
+   
+
+    &__title{
+        padding-left: 100px;
+        color: #FFF;
+        font-family: "Prompt";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__list{
+        margin-top: 42px;
+        display: flex;
+        justify-content: space-between;   
+    }
+
+
+    &__link{
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    &__item--img{
+        padding: 20px;
+        margin-right: 10px;
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: #225093;
+    }
+
+    &__item--title{
+        color: #FFF;
+        font-family: "Prompt";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__item--text{
+        color: #FFF;
+        font-family: "Prompt";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .services__title{
+        font-size: 32px;
+    }
+    .services__item--title{
+        font-size: 20px;
+    }
+    .services__item--text{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .services__container{
+        display: flex;
+        align-items: center;
+    }
+    .services__list{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .services__item--img{
+        width: 60px;
+        height: 60px;
+    }
+    .services__item--2 img{
+        width: 60px;
+        height: 60px;
+    }
+    .services__item--title{
+        font-size: 18px;
+    }
+    .services__item--text{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services__container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .services__title{
+        font-size: 24px;
+    }
+    .services__list{
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .services__item--title{
+        font-size: 14px;
+    }
+    .services__item--text{
+        font-size: 12px;
+    }
+}
