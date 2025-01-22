@@ -1,0 +1,51 @@
+.header {
+    padding-top: 30px;
+    padding-bottom: 228px;
+    background: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../../img/header-bg.png);
+
+    &__content {
+        max-width: 892px;
+    }
+
+    &__link {
+        color: #FFF;
+        font-family: "Prompt";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        color: #FFF;
+        font-family: "Prompt";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__btn {
+        padding: 12px 22px;
+        color: #081C3D;
+        font-family: "Prompt";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 8px;
+        background: #FFF;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .header__title{
+        font-size: 42px;
+    }
+    .header__link {
+        color: #000;
+    }
+}
