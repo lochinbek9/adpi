@@ -43,6 +43,12 @@
         line-height: normal;
     }
 
+    &__img{
+        width: 100%; 
+        max-width: 650px; 
+        height: 432px;
+    }
+
     &__border{
         top: 930px;
         left: 63%;
@@ -66,5 +72,14 @@
 
     .about__border{
         display: none;
+    }
+}
+
+// ABOUT MOBILE
+
+@media screen and (max-width: 768px) {
+    .about__img{
+        height: 250px;
+
     }
 }

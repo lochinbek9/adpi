@@ -45,10 +45,25 @@ button{
   position: fixed;
   top: 500px;
   left: 85%;
-
   width: 200px;
   height: 200px;
   display: inline-block;
+  z-index: 10000;
+}
+
+@media only screen and (max-width: 800px){
+  .header__message{
+    top: 400px;
+    left: 80%;
+  }
+}
+
+
+@media only screen and (max-width: 500px){
+  .header__message{
+    top: 400px;
+    left: 70%;
+  }
 }
 
 .header__navbar {
