@@ -1,0 +1,144 @@
+.grant {
+    padding: 100px 0;
+    background: #F5F5F5;
+}
+
+.grant__desc {
+    color: #225093;
+    font-family: "Prompt";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.grant__title {
+    color: #000;
+    font-family: "Prompt";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.slider {
+    margin-bottom: 50px;
+    position: relative;
+    width: 120%;
+    max-width: 1300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 33.333%;
+    box-sizing: border-box;
+    padding: 10px;
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slide {
+    width: 280px;
+    height: 350px;
+    background: url(../../img/update.png);
+    background-repeat: no-repeat;
+}
+
+.nav-button {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: none;
+
+    cursor: pointer;
+    border-radius: 50px;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.grant__btn {
+    margin-left: 40%;
+    padding: 12px 30px;
+    border-radius: 8px;
+    background: #225093;
+    color: #FFF;
+    text-align: center;
+    font-family: "Prompt";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    &:hover {
+        color: #fff;
+
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .grant__title {
+        font-size: 36px;
+    }
+
+   .grant__desc {
+        font-size: 20px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    // .slide {
+    //     flex: 0 0 50%;
+    // }
+}
+
+@media screen and (max-width: 768px) {
+    .grant__title {
+        font-size: 28px;
+    }
+
+   .grant__desc {
+        font-size: 18px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+   
+
+    .grant__btn {
+        margin-left: 30%;
+   }
+}

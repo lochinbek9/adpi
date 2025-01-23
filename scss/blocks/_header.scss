@@ -4,6 +4,7 @@
     background: #000;
     background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../../img/header-bg.png);
     background-size: auto auto;
+    background-repeat: no-repeat;
 
     &__content {
         max-width: 892px;

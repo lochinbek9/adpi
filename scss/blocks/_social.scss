@@ -64,6 +64,7 @@
         &__list{
            flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
         }
         &__item{
             width: 200px;
@@ -75,12 +76,72 @@
 
 @media screen and (max-width: 980px) {
     .social{
+
+
        
         &__desc{
             font-size: 18px;
+            text-align: center;
         }
         &__title{
+            text-align: center;
             font-size: 22px;
+        }
+
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &__item{
+            width: 180px;
+            height: 200px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .social{
+       &__list{
+        flex-wrap: nowrap;
+       }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social{
+        padding: 50px 0;
+        &__desc{
+            font-size: 16px;
+        }
+        &__title{
+            font-size: 20px;
+        }
+
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item{
+            width: 200px;
+            height: 200px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .social{
+        &__desc{
+            font-size: 14px;
+        }
+        &__title{
+            font-size: 18px;
         }
         &__list{
             display: flex;
@@ -89,7 +150,7 @@
             align-items: center;
         }
         &__item{
-            width: 180px;
+            width: 200px;
             height: 200px;
             padding-bottom: 20px;
         }

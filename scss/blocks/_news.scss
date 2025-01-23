@@ -190,9 +190,11 @@
 @media screen and (max-width: 860px) {
     .news__desc {
         font-size: 24px;
+        text-align: center;
     }
 
     .news__title {
+        text-align: center;
         font-size: 28px;
     }
 
@@ -231,6 +233,10 @@
 
     .news__tab__link--top{
         padding-left: 20px;
+    }
+
+    .news__link{
+        font-size: 24px;
     }
 
 }

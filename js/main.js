@@ -1,5 +1,7 @@
 "use strict";
 
+
+
 // HAMBURGER MENU
 
 const hamburger = document.getElementById('hamburger');
@@ -12,38 +14,33 @@ hamburger.addEventListener('click', () => {
 
 // NEWS TAB MENU
 
-document.addEventListener("DOMContentLoaded", () => {
-  const menuItems = document.querySelectorAll(".news__menu-item");
-  const contentItems = document.querySelectorAll(".news__content-item");
+const slides = document.querySelector('.slides');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+const slideWidth = 100 / 3; // Har uchta slayder ko'rsatiladi
+const totalSlides = document.querySelectorAll('.slide').length;
+let currentIndex = 0;
 
-  menuItems.forEach(item => {
-    item.addEventListener("click", () => {
-      // Remove 'active' class from all content items
-      contentItems.forEach(content => content.classList.remove("active"));
+function updateSlider() {
+    slides.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+}
 
-      // Add 'active' class to the clicked tab's associated content
-      const contentId = item.getAttribute("data-content");
-      const targetContent = document.getElementById(contentId);
+function goToPrevSlide() {
+    currentIndex = Math.max(currentIndex - 1, 0);
+    updateSlider();
+}
 
-      
-      targetContent.classList.toggle("active");
-      
+function goToNextSlide() {
+    const maxIndex = totalSlides - 3; // Oxirgi uchlikdan nariga o'tmaslik uchun
+    currentIndex = Math.min(currentIndex + 1, maxIndex);
+    updateSlider();
+}
 
-      // If the tab is "News", display timestamps
-      if (contentId === "news") {
-        const newsList = document.querySelectorAll(".news__content--list li");
-        newsList.forEach((news, index) => {
-          const currentDate = new Date();
-          const timestamp = currentDate.toLocaleString();
-          const dateElement = news.querySelector(".news__content--item--date");
-          if (!dateElement.dataset.initialized) {
-            dateElement.textContent = `Added on: ${timestamp}`;
-            dateElement.dataset.initialized = true;
-          }
-        });
-      }
-    });
-  });
-});
+prevButton.addEventListener('click', goToPrevSlide);
+nextButton.addEventListener('click', goToNextSlide);
 
-
+setInterval(() => {
+    const maxIndex = totalSlides - 3;
+    currentIndex = currentIndex < maxIndex ? currentIndex + 1 : 0;
+    updateSlider();
+}, 3000); // Har 3 sekundda avtomatik o'tadi

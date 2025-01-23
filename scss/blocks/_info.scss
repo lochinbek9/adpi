@@ -1,0 +1,126 @@
+
+.info{
+    padding: 50px 0;
+    background: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../../img/header-bg.png);
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    &__container{
+        text-align: center;
+    }
+
+    &__title{
+        color: #FFF;
+        font-family: "Prompt";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__text{
+        color: #FFF;
+        font-family: "Prompt";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    &__item{
+        padding: 30px 0;
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+        background: #225093;
+    }
+
+    &__item--text{
+        padding-top: 10px;
+        color: #FFF;
+        text-align: center;
+        font-family: "Prompt";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__item--number{
+        color: #FFF;
+        text-align: center;
+        font-family: "Prompt";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+
+
+@media screen and (max-width: 1090px) {
+    .info{
+        &__title{
+            font-size: 30px;
+        }
+
+        &__text{
+            font-size: 16px;
+        }
+        &__list{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__item{
+            width: 250px;
+            height: 200px;
+        }
+
+        &__item--text{
+            font-size: 16px;
+        }
+
+        &__item--number{
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .info{
+        &__title{
+            font-size: 24px;
+        }
+
+        &__text{
+            font-size: 14px;
+        }
+        &__list{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__item{
+            width: 200px;
+            height: 200px;
+        }
+
+        &__item--text{
+            font-size: 14px;
+        }
+
+        &__item--number{
+            font-size: 24px;
+        }
+    }
+}

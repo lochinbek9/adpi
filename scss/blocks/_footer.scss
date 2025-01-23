@@ -1,0 +1,81 @@
+.footer {
+    padding-top: 50px;
+    background: #020919;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        // align-items: ;
+        gap: 20px;
+    }
+
+    &__text {
+        max-width: 251px;
+        padding-top: 30px;
+        color: #FFF;
+        font-family: "Prompt";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+   
+
+    &__title {
+        color: #FFF;
+        font-family: "Prompt";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 154px;
+        color: #FFF;
+        font-family: "Prompt";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+            color: #fff;
+        }
+    }
+
+    &__right--item{
+        padding-bottom: 20px;
+    }
+
+    &__right--link{
+        display: flex;
+        align-items: center;
+       gap: 20px;
+       justify-content: center;
+    }
+
+    &__right--link img {
+       display: block;
+    }
+
+    &__right--link p {
+        width: 342px;
+        color: #FFF;
+        font-family: Gilroy;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__line{
+        width: 1680px;
+        height: 2px;
+        background: #FFF;
+    }
+}
