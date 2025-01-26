@@ -2,7 +2,7 @@
     padding-top: 50px;
     background: #020919;
     padding-bottom: 50px;
-    
+
     &__box {
         display: flex;
         justify-content: space-between;
@@ -21,7 +21,7 @@
         line-height: normal;
     }
 
-   
+
 
     &__title {
         color: #FFF;
@@ -49,19 +49,19 @@
         }
     }
 
-    &__right--item{
+    &__right--item {
         padding-bottom: 20px;
     }
 
-    &__right--link{
+    &__right--link {
         display: flex;
         align-items: center;
-       gap: 20px;
-       justify-content: center;
+        gap: 20px;
+        justify-content: center;
     }
 
     &__right--link img {
-       display: block;
+        display: block;
     }
 
     &__right--link p {
@@ -74,21 +74,27 @@
         line-height: normal;
     }
 
-    &__line{
+    &__line {
         width: 1300px;
         height: 2px;
         background: #FFF;
     }
 
-    &__copyright{
+    &__copyright {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
         padding-top: 30px;
-        text-align: center;
-        color: #FFF;
-        font-family: "Prompt";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+
+        p {
+            display: block;
+            color: #FFF;
+            font-family: "Prompt";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
     }
 }
 
@@ -111,21 +117,17 @@
             text-align: left;
         }
 
-        &__title {
-            // text-align: center;
-        }
-
         &__link {
             display: block;
             width: 100%;
             text-align: left;
         }
 
-        &__right--item{
+        &__right--item {
             padding-bottom: 20px;
         }
 
-        &__right--link{
+        &__right--link {
             display: flex;
             align-items: center;
             gap: 20px;
@@ -141,7 +143,7 @@
             text-align: left;
         }
 
-        &__line{
+        &__line {
             width: 100%;
         }
     }
@@ -173,7 +175,7 @@
             text-align: left;
         }
 
-        &__right--item{
+        &__right--item {
             padding-bottom: 20px;
         }
 
