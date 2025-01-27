@@ -83,10 +83,10 @@
     &__copyright {
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 5px;
         padding-top: 30px;
 
-        p {
+        p,a {
             display: block;
             color: #FFF;
             font-family: "Prompt";

@@ -98,10 +98,13 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
+    color: #fff;
+    border: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
     &:hover {
-        color: #fff;
-
+        color: #225093;
+        border: 3px solid #225093;
+        background-color: #fff;
     }
 }
 
