@@ -1,12 +1,10 @@
 .header {
     padding-top: 30px;
-    padding-bottom: 228px;
+    padding-bottom: 90px;
     background: #000;
-    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../../img/header-bg.png);
-    background-size: auto auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../../img/header-bg-1.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
-
-    
 
     &__content {
         max-width: 892px;
