@@ -99,176 +99,70 @@
                     <h2 class="news__title">texnikumimizdagi so‘ngi yangiliklar bilan tanishib boring</h2>
                 </div>
 
-                <div class="news__main d-flex ">
-                    <div class="news__content">
-                        <img src="./img/news-img/news-1.jpg" alt="">
-                        <div class="news__content--top d-flex justify-content-between">
-                            <span class="news__content--desc">#targʼibot <br>
-                            </span>
-                            <ul class="news__content--list d-flex align-items-center gap-3">
-                                <li class="news__content--item">
-                                    <button>
-                                        <img src="./img/save.svg" alt="">
-                                    </button>
-                                </li>
-
-                                <li class="news__content--item">
-                                    <button>
-                                        <img src="./img/clock.svg" alt="">
-                                    </button>
-                                </li>
-                                <li id="news" class="news__content--item news__content--item--date">
-                                    19:40/26.01.2025
-                                </li>
-                            </ul>
-                        </div>
-                        <h2 class="news__content--title">
-                            Milliy libos-millat qiyofasi <br>
-                            juma-milliy liboslar targʼiboti kuni
-                        </h2>
-                        <p class="news__content--text">
-                            🌎Tarixdan oʼzbek millatimizga xos boʼlgan urf-odatlarimiz, milliy kiyimlatimizga boshqa
-                            millatlar havas qilib kelgan. <br>
-                            🌎Bugungi kunda dunyoning juda koʼp mamlakatlarida oʼtkazib kelinayotgan  milliyligimizga
-                            xos boʼlgan koʼrgazmalarga boʼlgan eʼtibor yaqqol misol.  <br>
-                            🌎Andijon mediatalim texnikumida Andijon viloyati hokimligi, Oila va xotin-qizlar
-                            boshqarmasi korsatmasiga asosan har juma kuni "Milliy luboslarni targʼʼib etish kuni" deb
-                            eʼlon qilinganligi munosabati bilan texnikum oʼquvchilar o‘rtasida milliy liboslar
-                            taqdimotini oʼtkazish anʼanaga aylanib bormoqda. Bu anʼana  avloddan avlodga milliy
-                            qiyofamizni toʼla meros qilib qoldirishimizga xizmat qiladi
-                        </p>
-                        <a href="https://t.me/Andmediat/" class="news__content--link">Batafsil</a>
+                <div class="tabs">
+                    <div class="tab-menu">
+                        <button class="tab-button active" onclick="openTab('local')">Texnikum</button>
+                        <button class="tab-button" onclick="openTab('world')">Ta'lim</button>
+                        <button class="tab-button" onclick="openTab('sports')">Sport</button>
                     </div>
-                    <div class="news__tab">
-                        <ul class="news__tab__list p-3">
-                            <li class="news__tab__item">
-                                <a href="https://t.me/Andmediat/5269" class="news__tab__link d-flex">
-                                    <img src="./img/news-img/news-6.jpg" alt="news-tab" width="250" height="200"
-                                        class="news__tab__link--img">
-                                    <div class="news__tab__link--top d-flex justify-content-between">
-                                        <span class="news__tab__desc">Yangiliklar</span>
-                                        <h3 class="news__tab__title">
-
-                                            Andijon mediatalim texnikumi texnik xodimlari texnikum hududida oqlov,
-                                            tozalov ishlarini amalga oshirish davom etmoqda.
-                                        </h3>
-                                        <ul class="d-flex align-items-center gap-3 p-0">
-                                            <li class=" news__tab__item__img">
-                                                <button>
-                                                    <img src="./img/save.svg" alt="">
-                                                </button>
-                                            </li>
-
-                                            <li class="news__tab__item__img">
-                                                <button>
-                                                    <img src="./img/clock.svg" alt="">
-                                                </button>
-                                            </li>
-                                            <li id="news" class=" news__content--item--date">
-                                                12:33/27.01.2025
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="news__tab__item">
-                                <a href="https://t.me/Andmediat/5261" class="news__tab__link d-flex">
-                                    <img class="news__tab__link--img" src="./img/news-img/news-7.jpg" alt="news-tab"
-                                        width="250">
-                                    <div class="news__tab__link--top d-flex justify-content-between">
-                                        <span class="news__tab__desc">Yangiliklar</span>
-
-                                        <h3 class="news__tab__title">
-                                            #sogʼlom turmush
-                                            #ertalabki badantarbiya
-                                            Andijon mediatalim texnikumi
-                                        </h3>
-
-                                        <ul class="d-flex align-items-center gap-3 p-0">
-                                            <li class=" news__tab__item__img">
-                                                <button>
-                                                    <img src="./img/save.svg" alt="">
-                                                </button>
-                                            </li>
-
-                                            <li class="news__tab__item__img">
-                                                <button>
-                                                    <img src="./img/clock.svg" alt="">
-                                                </button>
-                                            </li>
-                                            <li id="news" class=" news__content--item--date">
-                                                12:32/19.01.2025
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="news__tab__item">
-                                <a href="https://t.me/Andmediat/5255" class="news__tab__link d-flex">
-                                    <img class="news__tab__link--img" src="./img/news-img/news-9.jpg" alt="news-tab" width="250" height="150">
-                                    <div class="news__tab__link--top d-flex justify-content-between">
-                                        <span class="news__tab__desc">Yangiliklar</span>
-                                        <h3 class="news__tab__title">
-                                            #Saflanish <br>
-
-
-                                            🌎Haftaning dushanba kuni davlat madhiyasini kuylash, davlat bayrogʼini <br>
-                                            koʼtarish bilan boshlandi. <br>
-
-                                        </h3>
-                                        <ul class="d-flex align-items-center gap-3 p-0">
-                                            <li class=" news__tab__item__img">
-                                                <button>
-                                                    <img src="./img/save.svg" alt="">
-                                                </button>
-                                            </li>
-
-                                            <li class="news__tab__item__img">
-                                                <button>
-                                                    <img src="./img/clock.svg" alt="">
-                                                </button>
-                                            </li>
-                                            <li id="news" class=" news__content--item--date">
-                                                15:01/19.01.2025
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="news__tab__item">
-                                <a href="https://t.me/Andmediat/5250" class="news__tab__link d-flex">
-                                    <img class="news__tab__link--img" src="./img/news-img/news-10.jpg" alt="news-tab" width="250">
-                                    <div class="news__tab__link--top d-flex justify-content-between">
-                                        <span class="news__tab__desc">Yangiliklar</span>
-                                        <h3 class="news__tab__title">
-                                            🗣Kasbiy taʼlim muassasalari uchun oʻquv qoʻllanmalarni yaratish boʻyicha tanlov e’lon qilinadi
-
-                                        </h3>
-                                        <ul class="d-flex align-items-center gap-3 p-0">
-                                            <li class=" news__tab__item__img">
-                                                <button>
-                                                    <img src="./img/save.svg" alt="">
-                                                </button>
-                                            </li>
-
-                                            <li class="news__tab__item__img">
-                                                <button>
-                                                    <img src="./img/clock.svg" alt="">
-                                                </button>
-                                            </li>
-                                            <li id="news" class=" news__content--item--date">
-                                                19:05/25.01.2025
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-
-                        </ul>
-
+                    <div id="local" class="tab-content active">
+                        <div class="main-news">
+                            <div class="news-item" data-id="local-1">
+                                <img src="./img/news-main-img.png" alt="Main News">
+                                <h3>Tizimda xotin-qizlar va erkaklar uchun teng huquq va imkoniyatlar</h3>
+                                <p>Oliy majlis senatining Xotin-qizlar va gender tenglik masalalari qo’mitasi tomonidan Oliy va o’rta maxsus ta’lim vazrligining xotin-qizlar erkaklar uchun teng huquq hamda imkoniyatlarni ta’minlash masalalari bo’yicha maslahat kengashi faoliyat o’rganildi</p>
+                            </div>
+                        </div>
+                        <div class="latest-news">
+                            <div class="news-item" data-id="local-2" onclick="setMainNews('local', this)">
+                                <h3>Mahalliy Yangilik 2</h3>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="news-item" data-id="local-3" onclick="setMainNews('local', this)">
+                                <h3>Mahalliy Yangilik 3</h3>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="world" class="tab-content">
+                        <div class="main-news">
+                            <div class="news-item" data-id="world-1">
+                                <img src="./img/news-main-img.png" alt="Main News">
+                                <h3>Xalqaro Yangilik 1</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                        <div class="latest-news">
+                            <div class="news-item" data-id="world-2" onclick="setMainNews('world', this)">
+                                <h3>Xalqaro Yangilik 2</h3>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="news-item" data-id="world-3" onclick="setMainNews('world', this)">
+                                <h3>Xalqaro Yangilik 3</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sports" class="tab-content">
+                        <div class="main-news">
+                            <div class="news-item" data-id="sports-1">
+                                <img src="./img/news-main-img.png" alt="Main News">
+                                <h3>Sport Yangilik 1</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                            </div>
+                        </div>
+                        <div class="latest-news">
+                            <div class="news-item" data-id="sports-2" onclick="setMainNews('sports', this)">
+                                <h3>Sport Yangilik 2</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                            </div>
+                            <div class="news-item" data-id="sports-3" onclick="setMainNews('sports', this)">
+                                <h3>Sport Yangilik 3</h3>
+                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <a href="#" class="news__link">Barcha yangiliklar</a>
             </div>
 
         </section>
